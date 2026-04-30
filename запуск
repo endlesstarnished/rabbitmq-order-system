@@ -1,0 +1,12 @@
+установка pika: pip install pika или python -m pip install pika
+Запустите RabbitMQ (через Docker):
+Проверьте, запущен ли Docker Desktop:
+Должна быть иконка Docker в трее (рядом с часами)
+# В терминале VS Code (в папке проекта)
+docker-compose up -d
+# Перезапустите контейнер:
+docker-compose restart 
+# Остановите все контейнеры (если надо):
+docker-compose down
+Запустите Consumer (в ПЕРВОМ терминале): python consumer_5.py
+Откройте новый терминал python producer_5.py
